@@ -9,21 +9,22 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { NavBarComponent } from './components/partials/nav-bar/nav-bar.component';
+import { FooterComponent } from './components/partials/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { GameComponent } from './components/game/game.component';
 import { EshopComponent } from './components/eshop/eshop.component';
 import { MonCompteComponent } from './components/mon-compte/mon-compte.component';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
-import { AsideComponent } from './components/aside/aside.component';
-import { ProductsComponent } from './components/products/products.component';
+import { AsideComponent } from './components/eshop/aside/aside.component';
+import { ProductsComponent } from './components/eshop/products/products.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ButtonComponent } from './components/button/button.component';
-import { SingleProductComponent } from './components/single-product/single-product.component';
+import { SingleProductComponent } from './components/eshop/products/single-product/single-product.component';
 import { CommandeComponent } from './components/commande/commande.component';
-import { LoginComponent } from './components/login/login.component';
-import { SignupComponent } from './components/signup/signup.component';
+import { LoginComponent } from './components/mon-compte/login/login.component';
+import { SignupComponent } from './components/mon-compte/signup/signup.component';
+import { PartialsComponent } from './components/partials/partials.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { SignupComponent } from './components/signup/signup.component';
     CommandeComponent,
     LoginComponent,
     SignupComponent,
+    PartialsComponent,
   ],
   imports: [
     BrowserModule,
